@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Kitchen Library</title>
+  <link href="kitchen.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Header with logo, site name, tagline, and nav -->
+  <header class="site-header">
+    <div class="logo">
+      <img src="CompanyLogo.png" alt="Company Logo">
+    </div>
+
+    <div class="site-name">
+      <h1 class="title">The Kitchen Library</h1>
+      <p class="tagline">Community.Tools.Culinary Growth</p>
+    </div>
+     <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rentals.html">Rentals</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="form.html">Rental Form</a></li>
+      </ul>
+    </nav>
+  </header>
+<body>
+  <h2>Rental Conditions</h2>
+  <p>
+    • Rentals are for a maximum of two weeks.<br>
+    • Items must be in good condition.<br>
+    • Late returns may incur additional fees.<br>
+    • A valid email address is required for notifications.
+  </p>
+
+  <h2>Rent an Item</h2>
+  <form id="rentalForm">
+    <label for="rentalItem">Choose an item to rent:</label>
+    <select id="rentalItem" name="rentalItem" required>
+      <option value="">-- Select an item --</option>
+      <option value="blender">Blender</option>
+      <option value="immersion-blender">Immersion Blender</option>
+      <option value="ice-cream-maker">Ice Cream Maker</option>
+      <option value="stand-mixer">Stand Mixer</option>
+      <option value="pressure-cooker">Pressure Cooker</option>
+      <option value="bread-maker">Bread Maker</option>
+      <option value="food-processor">Food Processor</option>
+      <option value="waffle-maker">Waffle Maker</option>
+      <option value="air-fryer">Air Fryer</option>
+      <option value="Food Dehydrator">Food Dehydrator</option>
+      <option value="sous-vide-machine">Sous Vide Machine</option>
+      <option value="pizza-oven">Pizza Oven</option>
+    </select>
+
+    <br><br>
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <br><br>
+    <label for="startDate">Rental Start Date:</label>
+    <input type="date" id="startDate" name="startDate" required>
+
+    <br><br>
+    <input type="submit" value="Submit Rental Request">
+  </form>
+
+  <p id="returnDate"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>

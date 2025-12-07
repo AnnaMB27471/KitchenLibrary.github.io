@@ -1,0 +1,185 @@
+/* FONTS & BASE STYLES */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #e5e2d1; /* light neutral background */
+  color: #1b614a;            /* deep forest green for text */
+}
+
+/* HEADER */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1b614a;
+  padding: 10px 30px;
+  color: #ffffff;
+  width: 100%;
+}
+.logo img { height: 100px; width: auto; }
+.site-name { flex: 1; text-align: center; }
+.site-name h1 { color: #ffffff; font-size: 1.5rem; font-weight: 700; letter-spacing: 1px; margin: 0; }
+.site-name .tagline { color: #e5e2d1; font-size: 0.9rem; margin-top: 4px; }
+
+/* NAVIGATION */
+.main-nav ul { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; }
+.main-nav a { text-decoration: none; color: #ffffff; font-weight: 600; }
+.main-nav a:hover { color: #aaaaaa; }
+
+/* CONTENT */
+.content-container { max-width: 900px; margin: 0 auto; padding: 20px; }
+h1, h2, h3 { color: #1b614a; font-weight: 700; text-align: center; }
+p { text-align: center; }
+
+/* COMMUNITY LIST */
+.content-container ul { list-style: none; padding: 0; text-align: center; }
+.content-container li { margin: 8px 0; }
+
+/* HOME: INFOGRAPHIC */
+.infographic-container img {
+  max-width: 420px; width: 100%; height: auto;
+  border: 4px solid #3b8f6a; border-radius: 8px;
+  display: block; margin: 0 auto;
+}
+
+/* RENTALS: GRID */
+.rental-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem; margin-top: 2rem;
+}
+.rental-card {
+  background: #ffffff; border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem; text-align: center;
+  transition: transform 0.3s ease;
+}
+.rental-card:hover { transform: translateY(-3px); }
+.rental-card img {
+  width: 100%; max-width: 120px; height: auto;
+  margin: 0 auto 0.5rem; display: block; border-radius: 6px;
+}
+.rental-card h3 { font-size: 1rem; margin-bottom: 0.3rem; }
+.rental-card p { font-size: 0.85rem; margin-bottom: 0.5rem; }
+.rental-card .btn {
+  display: inline-block; background: #1b614a; color: #ffffff;
+  padding: 0.4rem 0.8rem; border-radius: 4px;
+  text-decoration: none; font-weight: 600; font-size: 0.85rem;
+  transition: background 0.3s ease;
+}
+.rental-card .btn:hover { background: #3b8f6a; }
+
+/* CLASSES: CHEF CARDS */
+.chef-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.chef-card {
+  background: #ffffff;          
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;                
+  height: 380px;                
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;                
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.chef-card img {
+  width: 100%;
+  height: 180px;              
+  object-fit: cover;           
+  border-radius: 10px;
+}
+
+.chef-card h3 {
+  margin: 10px 0 5px;
+}
+
+.chef-card p {
+  font-size: 0.9rem;
+  flex-grow: 1;                 
+}
+
+ 
+.skill {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* CLASSES: TABLE */
+.classes-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #ffffff;          /* white background for the table */
+  border-radius: 8px;           /* optional: rounded corners */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* optional: subtle shadow */
+}
+
+.classes-table th,
+.classes-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  background: #ffffff;          /* ensures all cells are white */
+}
+
+.classes-table thead {
+  background-color: #f2f2f2;    /* light gray header row */
+  font-weight: 600;
+}
+
+/* FORMS */
+form {
+  background: #ffffff; padding: 25px; border-radius: 12px;
+  max-width: 420px; width: 100%; margin: 2rem auto;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+form:hover { transform: scale(1.02); }
+label { display: block; margin-top: 15px; font-weight: bold; color: #34495e; }
+input, select, textarea {
+  width: 100%; padding: 10px; margin-top: 6px;
+  border: 1px solid #ccc; border-radius: 6px;
+  box-sizing: border-box; font-size: 14px;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: #4CAF50; outline: none;
+  box-shadow: 0 0 5px rgba(76,175,80,0.4);
+}
+input[type="submit"] {
+  background-color: #1b614a; color: white; border: none;
+  margin-top: 20px; cursor: pointer; border-radius: 6px;
+  font-size: 16px; padding: 12px; transition: background 0.3s ease;
+}
+input[type="submit"]:hover { background: #45a049; }
+
+/* FOOTER */
+.site-footer {
+  background-color: #1b614a; color: #ffffff;
+  text-align: center; padding: 20px; margin-top: 40px; width: 100%;
+}
+.site-footer a {
+  color: #ffffff; text-decoration: none; font-weight: 600;
+}
+.site-footer a:hover {
+  color: #e5e2d1; text-decoration: underline;
+}
+
+/* BREADCRUMB */
+.breadcrumb {
+  font-size: 0.9rem; margin: 15px 30px; color: #1b614a;
+}
+.breadcrumb a {
+  color: #1b614a; text-decoration: none; font-weight: 600;
+}
+.breadcrumb a:hover { text-decoration: underline; }
